@@ -178,6 +178,30 @@ nav {
     padding-bottom: 10px;
 }
 
+.quizzes-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.quiz-box {
+  width: 300px;
+  min-height: 250px;
+  background-color: #0d0c1d;
+  border: 2px solid #0ff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.quiz-box:hover {
+  transform: scale(1.05);
+}
+
+
 
 @media (max-width: 600px) {
   .user-scores {
