@@ -77,9 +77,36 @@ document.addEventListener("DOMContentLoaded", function () {
         if (currentQuestionIndex < questions.length) {
             loadQuestion();
         } else {
-            sessionStorage.setItem("quizScore", score);
-            sessionStorage.setItem("totalQuestions", questions.length);
-            window.location.href = "score.html";
+            const user = JSON.parse(sessionStorage.getItem("loggedInUser"));
+            if (!user) {
+                alert("No logged in user. Redirecting to login.");
+                window.location.href = "login.html";
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('user_id', user.id);
+            formData.append('quiz_id', selectedQuizId);
+            formData.append('score', score);
+            formData.append('total_questions', questions.length);
+
+            fetch('http://localhost/quiz_web_app_backend/api/save_score.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log("Save score response:", data);
+                if (data.status === "success") {
+                    window.location.href = "score.html";
+                } else {
+                    alert("Failed to save score. Please try again.");
+                }
+            })
+            .catch(error => {
+                console.error("Error saving score:", error);
+                alert("Error saving score. Please try again.");
+            });
         }
     });
 });
