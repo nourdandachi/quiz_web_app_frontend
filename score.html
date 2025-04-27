@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Result</title>
+  <link rel="stylesheet" href="css/score.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-left"><h2 id="user-status">Welcome</h2></div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="login.html">Logout</a>
+    </div>
+  </nav>
+
+  <div class="score-container">
+    <h1 class="quiz-finish-title">You finished the quiz!</h1>
+    <h2 class="quiz-name">Intro to CS</h2>
+    <p class="score">Your Score: <span id="score-percent">90%</span></p>
+    <p class="details">Correct Answers: <span id="correct-count">3</span>/3</p>
+
+    <div class="result-buttons">
+      <button onclick="location.href='index.html'">Back to Home</button>
+      <button onclick="location.href='quiz.html'">Retake Quiz</button>
+    </div>
+  </div>
+  <script src="js/score.js"></script>
+
+</body>
+</html>

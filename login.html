@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Quiz App</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <h2 id="welcome-title">Welcome Back!</h2>
+        <h3 id="login-msg">Login</h3>
+        <form id="login-form">
+            <div class="input-group" id="email-input">
+                <label for="email">Email</label>
+                <br>
+                <input type="email" id="email" placeholder="Email..." required>
+            </div>
+            <br>
+            <div class="input-group" id="password-input">
+                <label for="password">Password</label>
+                <br>
+                <input type="password" id="password" placeholder="Password..." required>
+                <p id="error-msg">error-msg here</p>
+            </div>
+            <br>
+            
+            <br>
+            <button type="submit" id="login-btn">Login</button>
+            <br>
+            <p id="register-msg">Don't have an account? <a href="register.html" id="register-link">Register</a></p>
+            
+
+        </form>
+    </div>
+    <script src="js/login.js"></script>
+
+    
+</body>
+</html>

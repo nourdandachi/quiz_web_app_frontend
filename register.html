@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Quiz App</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body class="register-body">
+    <div class="register-container">
+        <h2 id="welcome-title">Welcome To Our Quiz</h2>
+        <h3 id="register-msg">Register</h3>
+        <form id="register-form">
+            <div class="input-group" id="name-input">
+                <label for="name">Name</label>
+                <br>
+                <input type="text" id="name" placeholder="Your Name..." required>
+              </div>
+              
+            <div class="input-group" id="email-input">
+                <label for="email">Email</label>
+                <br>
+                <input type="email" id="email" placeholder="Email..." required>
+            </div>
+            
+            <div class="input-group" id="password-input">
+                <label for="password">Password</label>
+                <br>
+                <input type="password" id="password" placeholder="Password..." required>
+
+                <br>
+
+                <label for="confirm-password">Confirm Password</label>
+                <br>
+                <input type="password" id="confirm-password" placeholder="Confirm Password..." required>
+                <p id="error-msg">error-msg here</p>
+            </div>
+            <br>
+            
+            <br>
+            <button type="submit" id="register-btn">Register</button>
+            <br>
+            <p id="login-msg">Already have an account? <a href="login.html" id="login-link">Login</a></p>
+            
+
+        </form>
+    </div>
+    <script src="js/register.js"></script>
+
+    
+</body>
+</html>
