@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
 
-        // Now fetch user scores
+
         if (user) {
             fetch(`http://localhost/quiz_web_app_backend/api/get_scores.php?user_id=${user.id}`)
             .then(response => response.json())
