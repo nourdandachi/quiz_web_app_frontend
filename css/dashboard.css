@@ -269,3 +269,33 @@ tbody tr:hover {
     }
   }
   
+
+  #create-section {
+    margin-top: 30px;
+}
+#add-question-btn {
+    margin-top: 15px;
+    background: linear-gradient(90deg, #06d6a0, #8338ec);
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#add-question-btn:hover {
+    box-shadow: 0 0 10px #8338ecaa;
+}
+#create-quiz-btn {
+    margin-top: 20px;
+    background: linear-gradient(90deg, #8338ec, #06d6a0);
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#create-quiz-btn:hover {
+    box-shadow: 0 0 10px #06d6a0aa;
+}
